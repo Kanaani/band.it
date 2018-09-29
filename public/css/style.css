@@ -1,0 +1,521 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    margin:0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background:#1e1e1e;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.inputSubmit3 {
+    display: block;
+    font-size: 1em;
+    padding: 3px 0;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.myH1{
+    font-size: 36px;
+}
+
+.containerAdmin{
+    background:#1e1e1e; color:#adadad;
+    height:100vh;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu{
+    margin: 20px 0 0 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -25px)
+}
+
+.sep1{
+    height: 10px;
+    margin: 10px 0;
+}
+
+.adminCtr{
+    text-align: left;
+    padding: 10px;
+}
+
+.columnLeft {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+.columnRight {
+    float: left;
+    width: 75%;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.myInput1 {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333333;
+    color: white;
+    /* resize: none; */
+}
+
+.inputSubmit {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.inputSubmit:hover {
+    background-color: #45a049;
+}
+
+.containerIndex {
+    color:#adadad;
+    height:auto;
+    padding: 10px;
+    text-align: left;
+    width: 100vw;
+    max-width: 1200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 2fr 0.75fr;
+    grid-template-rows: 50px auto 40px auto;
+    grid-template-areas: "title search search" "slideshow slideshow slideshow" "bands news genres";
+  }
+  
+  .title { grid-area: title; 
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .siteTitleIt {
+    color: #4CAF50;
+    font-weight: normal;
+}
+  
+  .slideshow { grid-area: slideshow;
+  }
+   
+  .bands { grid-area: bands;
+    padding: 0 15px;
+    color:#000;
+  }
+  
+  .news { grid-area: news; 
+    padding: 0 15px;
+    color:#000;
+  }
+  
+  .genres { grid-area: genres; 
+    padding: 5px;
+    padding: 0 15px;
+  }
+
+  .search { grid-area: search; 
+  }
+
+  .searchbar {
+    max-width: 300px;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    background-color: #333333;
+    color: white;
+    float: right;
+}
+
+.genresList li {
+    float: none;
+}
+
+.genresList{
+    margin: 20px 0 0 0;
+}
+
+.genresList li a:hover {
+    background-color: #343434;
+    cursor: pointer;
+}
+
+/****SlideShow_CSS*****/
+.slideLimit {
+    max-height: 40vh;
+    overflow: hidden;
+}
+.mySlides {
+    display:none;
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+.slidShow-content{
+    max-width:980px;
+    margin:auto;
+}
+
+
+.sh-bullet{
+    cursor:pointer;
+    height:13px;
+    width:13px;
+    border-radius:50%;
+    color:#fff;
+    display:inline-block;
+    padding:0 4px;
+    text-align:center;
+    border:1px solid #ccc;
+    background-color:transparent;
+}
+
+.sh-bullet:hover{
+    color:#000;
+    background-color: #fff;
+}
+
+.sh-white {
+    background-color: #fff;
+}
+
+.sh-right-arrow{
+    float:right;
+}
+
+.sh-left-arrow{
+    float:left;
+}
+
+.sh-right-arrow:hover,.sh-left-arrow:hover{
+    cursor: pointer;
+    color:#b4aa50;
+}
+
+.sh-display-bottommiddle{
+    text-align:center;
+    padding:0.01em 16px;
+    margin:16px 0;
+    font-size:18px;
+    color:#fff;
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translate(-50%,0%);
+}
+
+.sh-display-container{position:relative}
+.sh-display-container:hover span{display:inline-block}
+
+/****CARD_CSS*****/
+.containsCard a {
+    color: currentColor;
+    text-decoration: none;
+  }
+  
+.containsCard p {
+    font-size: 13px;
+    margin: 5px;
+  }
+  
+  .containsCard  a:hover .card-outmore {
+    background:#343434;
+    color: #fff;
+  }
+
+  .containsCard a:hover .thecard {
+    box-shadow: 0 10px 50px rgba(0,0,0,.6);
+  }
+  
+  .containsCard .thecard {
+    width: 100%;
+    margin: 10% auto;
+    box-shadow: 0 1px 30px rgba(0,0,0,.4);
+    display: block;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: 400ms ease;
+  }
+  
+  .containsCard .card-img {
+    max-height: 100%;
+  }
+  
+  .containsCard .card-img img {
+    width:100%;
+    height: 100%;
+    border-radius: 4px 4px 0px 0px;
+  }
+  
+  .containsCard  .card-caption {
+    position: relative;
+    background: #ffffff;
+    padding: 15px 25px 5px 25px;
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  .containsCard .card-outmore {
+    padding: 0px;
+    border-radius: 0px 0px 4px 4px;
+    border-top: 1px solid #e0e0e0;
+    background: #efefef;
+    color: #222;
+    display: inline-table;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 400ms ease;
+  }
+  .containsCard .card-outmore h5 {
+    float: left;
+  }
+  .containsCard .card-outmore i {
+    float: right;
+  }
+  
+  .containsCard span.genre {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  
+  .containsCard h1 {
+    font-size: 22px;
+    margin: 5px;
+  }
+  
+  .containsCard h5 {
+    margin:0;
+  }
+
+  .containsCard .collapsible ,.containsCard .newsCollapsible {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .containsCard a:hover .collapsible, .containsCard a:hover .newsCollapsible {
+    color: #fff;
+  }
+
+  
+  .containsCard .content {
+    padding: 16px 18px;
+    display: none;
+    overflow: hidden;
+    background: #efefef;
+    color: #222;
+    max-width: 100%;
+  }
+
+  .containsCard .NewsCard{
+      height: auto;
+      width: 100%;
+      overflow-wrap: break-word;
+      word-break: break-all;
+      margin: 5% auto;
+      box-shadow: 0 1px 30px rgba(0,0,0,.4);
+      display: block;
+      background-color: #fff;
+      border-radius: 4px;
+      transition: 400ms ease;
+  }
+
+  embed {
+      width: 100%;
+  }
+
+  audio {
+      width: 100%;
+  }
+
+  /* Admin Tables */
+
+  .tableAdmin{
+    width: 100%;
+    padding: 16px 0;
+    margin: 4px 0;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333333;
+    color: white;
+  }
+
+  .tableAdmin-head th {
+    padding: 0 15px 10px 15px;
+  }
+  
+  .tableAdmin-body td {
+    padding: 5px 15px;
+  }
+
+  .tableAdmin-body {
+    padding: 10px 0 0 0;
+    overflow: auto;
+  }
+
+  .rowAdmin th {
+      color: #4CAF50;
+  }
+
+  .tableAdmin .remove {
+    color: #4CAF50;
+    background-color: #333333;
+    color: #adadad;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .tableAdmin .remove:hover {
+    color: #4CAF50;
+    background-color: #1e1e1e;
+    color: #adadad;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .playIcon {
+      cursor: pointer;
+      margin: 0 0 -5px 0;
+  }
+
+  .adminLogin {
+      margin: 15% 25%;
+  }
+
+  .myInput2 {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333333;
+    color: white;
+}
+
+.inputSubmit2 {
+    width: 20%;
+    background-color: #24532b;
+    color: white;
+    padding: 12px 0;
+    margin: 4px 0;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menuCol {
+    grid-area: menuCol;
+    display: none;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 185px)
+}
+
+.menuCol li {
+    float: left;
+}
+
+.menuCol li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menuCol li a:hover {
+    background-color: #333333;
+}
+
+.date {
+    color: #444;
+    margin-left: 7px;
+    font-size: 0.7em;
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    .grid-container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 2fr 0.75fr;
+        grid-template-rows: 50px auto 40px auto auto;
+        grid-template-areas: "title search search" "slideshow slideshow slideshow" "menuCol menuCol menuCol" "bands bands bands" "news news news";
+    }
+
+    .news { display: none; }
+    .genres { display: none; }
+    .menuCol { display: block;}
+    .containsCard .thecard {margin: 4% auto;}
+}

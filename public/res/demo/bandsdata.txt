@@ -1,0 +1,25 @@
+[{
+    "id": "1",
+    "name": "Imagine Dragons",
+    "cover": "imagine dragons.jpg",
+    "bio": "An American pop rock band from Las Vegas, Nevada, consisting of lead vocalist Dan Reynolds, lead guitarist Wayne Sermon, bassist Ben McKee, and drummer Daniel Platzman",
+    "rating": "9",
+    "genre": "Rock"
+},
+{
+    "id": "2",
+    "name": "The Beatles",
+    "cover": "the beatles.jpg",
+    "bio": "An English rock band formed in Liverpool in 1960. With members John Lennon, Paul McCartney, George Harrison and Ringo Starr, they became widely regarded as the foremost and most influential music band in history",
+    "rating": "10",
+    "genre": "Rock"
+},
+{
+    "id": "3",
+    "name": "Pink Floyd",
+    "cover": "PinkFloyd.jpg",
+    "bio": "An English rock band formed in London in 1965. They achieved international acclaim with their progressive and psychedelic music",
+    "rating": "10",
+    "genre": "Old School"
+}
+]

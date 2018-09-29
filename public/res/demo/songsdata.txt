@@ -1,0 +1,61 @@
+[{
+    "id": "1",
+    "title": "Believer",
+    "path": "imagine dragons_believer.mp3",
+    "bandID": "a"
+},
+{
+    "id": "2",
+    "title": "Whatever it takes",
+    "path": "imagine dragons_whatever it takes.mp3",
+    "bandID": "a"
+},
+{
+    "id": "3",
+    "title": "Next to me",
+    "path": "imagine dragons_next to me.mp3",
+    "bandID": "w"
+},
+{
+    "id": "4",
+    "title": "Thunder",
+    "path": "imagine dragons_thunder.mp3",
+    "bandID": "w"
+},
+{
+    "id": "5",
+    "title": "Radioactive",
+    "path": "imagine dragons_radioactive.mp3",
+    "bandID": "1"
+},
+{
+    "id": "6",
+    "title": "Hey Jude",
+    "path": "the beatles_hey jude.mp3",
+    "bandID": "2"
+},
+{
+    "id": "7",
+    "title": "Let it be",
+    "path": "the beatles_let it be.mp3",
+    "bandID": "2"
+},
+{
+    "id": "8",
+    "title": "Yesterday",
+    "path": "the beatles_yesterday.mp3",
+    "bandID": "2"
+},
+{
+    "id": "9",
+    "title": "Don't let me down",
+    "path": "the beatles_dont let me down.mp3",
+    "bandID": "2"
+},
+{
+    "id": "10",
+    "title": "Can't buy me love",
+    "path": "the beatles_cant buy me love.mp3",
+    "bandID": "2"
+}
+]

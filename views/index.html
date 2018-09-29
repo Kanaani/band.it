@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Band.it</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="containerIndex">
+    <div class="grid-container">
+        <div class="title">
+            Band<span class="siteTitleIt">.it</span>
+        </div>
+        <div class="search">
+            <form action="">
+                <input class="searchbar" id="searchInput" onkeyup="srchFilter()" type="text" placeholder="Search Band.it">
+            </form>
+        </div>
+        <div class="slideshow">
+            <div class="slidShow-content sh-display-container" style="max-width:100vw">
+                <div class="slideLimit">
+                    <img class="mySlides" style="width:100%">
+                    <img class="mySlides" style="width:100%">
+                    <img class="mySlides" style="width:100%">
+                    <img class="mySlides" style="width:100%">
+                </div>
+                <div class="sh-display-bottommiddle" style="width:100%">
+                    <div class="sh-left-arrow" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="sh-right-arrow" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="sh-bullet bullet" onclick="currentDiv(1)"></span>
+                    <span class="sh-bullet bullet" onclick="currentDiv(2)"></span>
+                    <span class="sh-bullet bullet" onclick="currentDiv(3)"></span>
+                    <span class="sh-bullet bullet" onclick="currentDiv(4)"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menuCol">
+            <ul>
+                <li>
+                    <a href="#" onclick="showCol(0)">Bands</a>
+                </li>
+                <li><a>|</a></li>
+                <li>
+                    <a href="#" onclick="showCol(1)">News</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bands containsCard" id="bandsCol">
+            <!-- Bands -->
+        </div>
+        <div class="news containsCard" id="newsCol">
+            <!-- News -->
+        </div>
+        <div class="genres">
+                <div class="genresList">
+                    <ul>
+                        <li>
+                            <a onclick="genreFilter('all')">All Genres</a>
+                        </li>
+                        <li>
+                            <a onclick="genreFilter('Rock')">Rock</a>
+                        </li>
+                        <li>
+                            <a onclick="genreFilter('Old School')">Old School</a>
+                        </li>
+                        <li>
+                            <a onclick="genreFilter('Pop')">Pop</a>
+                        </li>
+                        <li>
+                            <a onclick="genreFilter('Electric')">Electric</a>
+                        </li>
+                        <li>
+                            <a onclick="genreFilter('Classic')" >Classic</a>
+                        </li>
+                        <li>
+                            <a onclick="genreFilter('Folk')">Folk</a>
+                        </li>
+                        <li>
+                            <a onclick="genreFilter('Heavy Metal')">Heavy Metal</a>
+                        </li>
+                        <li>
+                            <a onclick="genreFilter('Blues')">Blues</a>
+                        </li>
+                        <li>
+                            <a onclick="genreFilter('Country')">Country</a>
+                        </li>
+                        <li>
+                            <a onclick="genreFilter('Raggae')">Raggae</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+</div>
+<section></section>
+<script src="/js/index.js"></script>
+</body>
+
+</html>

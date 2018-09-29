@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Controles</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="containerAdmin">
+        <span class="myH1" id="adminTitle">Admin Controls</span>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#" onclick="showTable(0)">Bands</a>
+                </li>
+                <li>
+                    <a href="#" onclick="showTable(1)">Songs</a>
+                </li>
+                <li>
+                    <a href="#" onclick="showTable(2)">Events</a>
+                </li>
+                <li>
+                    <a href="#" onclick="showTable(3)">News</a>
+                </li>
+                <li>
+                    <form action="/logout" method="GET">
+                        <a href="#">
+                            <input type="submit" class="inputSubmit3" value="Logout">
+                        </a>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="sep1"></div>
+
+        <!-- Bands -->
+        <div id="songsPanel" class="row adminCtr">
+            <div class="columnLeft">
+                Add a new band:
+                <form>
+                    <input type="text" class="myInput1" id="bandNameForm" placeholder="Band Name">
+
+                    <textarea name="message" class="myInput1" id="bandBioForm" placeholder="Bio" rows="3"></textarea>
+                    <input type="text" class="myInput1" id="bandRatingForm" placeholder="Rating">
+                    <select id="bandGenreForm" class="myInput1" name="bGenres">
+                        <option style="display:none" value="">Genre</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Old School">Old School</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Electric">Electric</option>
+                        <option value="Classic">Classic</option>
+                        <option value="Folk">Folk</option>
+                        <option value="Heavy Metal">Heavy Metal</option>
+                        <option value="Blues">Blues</option>
+                        <option value="Country">Country</option>
+                        <option value="Raggae">Raggae</option>
+                    </select>
+                </form>
+                <form class="fileupload" action="bands/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="upfile" value="" class="myInput1" id="bandCoverForm" placeholder="FILE">
+                    <input id="submtBtnBand" type="submit" class="inputSubmit" value="Submit">
+                </form>
+                
+            </div>
+
+            <div class="columnRight">
+                Manage existing bands:
+                <div class="tableAdmin">
+                    <table>
+                        <thead class="tableAdmin-head">
+                            <tr class="rowAdmin">
+                                <th>Cover</th>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Genre</th>
+                                <th>Rating</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="tableAdmin-body" id="bandsTable">
+                            <!-- Bands list -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Songs -->
+        <div id="songsPanel" class="row adminCtr">
+            <div class="columnLeft">
+                Add a new song:
+                <form>
+                    <input type="text" class="myInput1" id="songNameForm" placeholder="Song title">
+                    <select id="songBandForm" class="myInput1" name="bGenres"></select>
+                </form>
+                <form class="fileupload" action="songs/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="upfile" class="myInput1" id="songPathForm" placeholder="AUDIO">
+                    <input id="submtBtnSong" type="submit" class="inputSubmit" value="Submit">
+                </form>
+            </div>
+
+            <div class="columnRight">
+                Manage existing songs:
+                <div class="tableAdmin">
+                    <table>
+                        <thead class="tableAdmin-head">
+                            <tr class="rowAdmin">
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Band</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="tableAdmin-body" id="songsTable">
+                            <!-- Songs list -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Events -->
+        <div id="eventsPanel" class="row adminCtr">
+            <div class="columnLeft">
+                Add a new event:
+                <form action="">
+                    <input type="file" class="myInput1" id="eventPathForm" name="audio">
+                    <input id="submtBtnEvent" type="submit" class="inputSubmit" value="Upload">
+                </form>
+            </div>
+
+            <div class="columnRight">
+                Manage existing events:
+                <div class="tableAdmin" style="width: 70%">
+                    <table>
+                        <thead class="tableAdmin-head">
+                            <tr class="rowAdmin">
+                                <th>ID</th>
+                                <th>Banner</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="tableAdmin-body" id="eventsTable">
+                            <!-- Events list -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- News -->
+        <div id="NewsPanel" class="row adminCtr">
+            <div class="columnLeft">
+                Add News:
+                <form>
+                    <input type="text" class="myInput1" id="newsNameForm" placeholder="Title">
+                    <textarea name="message" class="myInput1" id="newsSumForm" placeholder="Summary" rows="3"></textarea>
+                    <input type="date" class="myInput1" id="newsDateForm" name="bday">
+                </form>
+                <form class="fileupload" action="news/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="upfile" class="myInput1" id="newsPathForm">
+                    <input id="submtBtnNews" type="submit" class="inputSubmit" value="Submit">
+                </form>
+            </div>
+
+            <div class="columnRight">
+                Manage existing news:
+                <div class="tableAdmin">
+                    <table>
+                        <thead class="tableAdmin-head">
+                            <tr class="rowAdmin">
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="tableAdmin-body" id="newsTable">
+                            <!-- News list -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                
+        </div>
+
+
+    </div>
+
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>
