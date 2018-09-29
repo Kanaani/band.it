@@ -1,0 +1,31 @@
+{
+  "name": "band.it",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kanaani/Band.it.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-fileupload": "^0.4.0",
+    "formidable": "^1.2.1",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.6"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kanaani/Band.it/issues"
+  },
+  "homepage": "https://github.com/Kanaani/Band.it#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
+  "description": ""
+}
